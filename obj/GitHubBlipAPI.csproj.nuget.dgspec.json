@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj": {}
+    "c:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj": {
+    "c:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj",
+        "projectUniqueName": "c:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj",
         "projectName": "GitHubBlipAPI",
-        "projectPath": "C:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj",
+        "projectPath": "c:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\GitHubBlipAPI.csproj",
         "packagesPath": "C:\\Users\\RILTON\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\obj\\",
+        "outputPath": "c:\\Users\\RILTON\\Desktop\\Projetos\\TesteVaga pl\\teste3\\GitHubBlipAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -47,12 +47,12 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
