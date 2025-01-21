@@ -1,28 +1,27 @@
-using GitHubBlipAPI.Services; // Para usar IGitHubService e GitHubService
-using Microsoft.AspNetCore.Builder; // Para configurar o WebApplication
-using Microsoft.Extensions.DependencyInjection; // Para configurar os serviços no DI (Injeção de Dependência)
+using GitHubBlipAPI.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona serviços ao contêiner de DI
-builder.Services.AddControllers(); // Registra os controladores
-
-// Registra o HttpClient e o GitHubService no DI
-builder.Services.AddHttpClient<IGitHubService, GitHubService>(); // Registra o HttpClient para IGitHubService
+// Adiciona serviços à aplicação
+builder.Services.AddControllers();
+builder.Services.AddHttpClient<IGitHubService, GitHubService>();
 
 var app = builder.Build();
 
-// Configurações do pipeline de requisição HTTP
+// Configura o ambiente de desenvolvimento
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage(); // Mostra a página de exceções detalhadas em modo de desenvolvimento
+    app.UseDeveloperExceptionPage();
 }
 
-app.UseRouting(); // Ativa o roteamento
+// Define a porta a partir da variável de ambiente "PORT"
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+app.Urls.Add($"http://*:{port}");
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers(); // Mapeia os controladores para as rotas
-});
+// Configura o roteamento e os controladores
+app.UseRouting();
+app.MapControllers();
 
-app.Run(); // Executa o aplicativo
+app.Run();
